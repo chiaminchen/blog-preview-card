@@ -59,8 +59,9 @@ Using CSS function `clamp()` to create more responsive and flexible layouts that
 
 ### Useful resources
 
-- [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/clamp)
-- [CSS TRICKS](https://css-tricks.com/almanac/functions/c/clamp/)
+- [https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/clamp](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/clamp)
+- [https://css-tricks.com/almanac/functions/c/clamp/](https://css-tricks.com/almanac/functions/c/clamp/)
+- [https://css-tricks.com/almanac/rules/m/media/prefers-reduced-motion/](https://css-tricks.com/almanac/rules/m/media/prefers-reduced-motion/)
 
 ## Author
 

@@ -7,6 +7,7 @@
   --dark-color: #111;
   --light-color: #6b6b6b;
   --white-color: #fff;
+  --shadow-color: #000;
   --bold-font: 800;
   --normal-font: 500;
 }
@@ -35,7 +36,12 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  height: 100svh;
+}
+
+@support (height:100svh) {
+  body {
+    height: 100svh;
+  }
 }
 
 img {
@@ -45,11 +51,11 @@ img {
 
 .card {
   background-color: var(--white-color);
-  inline-size: clamp(20.4375rem, 19.1831rem + 5.3521vw, 24rem);
+  width: clamp(20.4375rem, 19.1831rem + 5.3521vw, 24rem);
   padding: 1.5rem;
   border: 1px solid var(--dark-color);
   border-radius: 1.25rem;
-  box-shadow: 0.5rem 0.5rem #000;
+  box-shadow: 0.5rem 0.5rem var(--shadow-color);
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -85,6 +91,12 @@ img {
   transition: all 0.2s;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .info__heading {
+    transition: none;
+  }
+}
+
 .info__heading:hover,
 .info__heading:focus {
   color: var(--highlight-color);
@@ -104,6 +116,8 @@ img {
 
 .author_picture {
   width: 2rem;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
 }
 
 .author_name {
